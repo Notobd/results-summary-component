@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body>
+    <main>
+      <div class="main-div">
+        <div class="result">
+          <span id="result-header">Your Result</span>
+          <div id="score">
+            <span id="mark">76</span><span class="total">of 100</span>
+          </div>
+          <span class="remark">Great</span
+          ><span class="remark-text"
+            >You scored higher than 65% of<br />
+            &nbsp;&nbsp;&nbsp;the people who have taken<br />
+            <span style="margin-left: 44px">these tests.</span>
+          </span>
+        </div>
+        <div class="summary">
+          <div class="cognitive-abilities">
+            <span id="summary-header">Summary</span>
+            <ul>
+              <li>
+                <div id="reaction">
+                  <div class="ability">
+                    <div>
+                      <img
+                        src="./assets/images/icon-reaction.svg"
+                        alt="react-icon"
+                        class="icon"
+                      />
+                      <span
+                        class="inner"
+                        style="color: hsl(0, 100%, 67%); font-size: small"
+                        >Reaction</span
+                      >
+                    </div>
+                    <div>
+                      <span class="rating">80</span
+                      ><span class="rating-mark"> / 100</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div id="memory">
+                  <div class="ability">
+                    <div>
+                      <img
+                        src="./assets/images/icon-memory.svg"
+                        alt="memory-icon"
+                        class="icon"
+                      />
+                      <span
+                        class="inner"
+                        style="color: hsl(39, 100%, 56%); font-size: small"
+                        >Memory</span
+                      >
+                    </div>
+                    <div>
+                      <span class="rating">92</span
+                      ><span class="rating-mark"> / 100</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div id="verbal">
+                  <div class="ability">
+                    <div>
+                      <img
+                        src="./assets/images/icon-verbal.svg"
+                        alt="verbal-icon"
+                        class="icon"
+                      />
+                      <span
+                        class="inner"
+                        style="color: hsl(166, 100%, 37%); font-size: small"
+                        >Verbal</span
+                      >
+                    </div>
+                    <div>
+                      <span class="rating">61</span
+                      ><span class="rating-mark"> / 100</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div id="visual">
+                  <div class="ability">
+                    <div>
+                      <img
+                        src="./assets/images/icon-visual.svg"
+                        alt="visual-icon"
+                        class="icon"
+                      />
+                      <span
+                        class="inner"
+                        style="color: hsl(234, 85%, 45%); font-size: small"
+                        >Visual</span
+                      >
+                    </div>
+                    <div>
+                      <span class="rating">72</span
+                      ><span class="rating-mark"> / 100</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div>
+              <input type="button" value="Continue" id="continue-button" />
+              <label for="continue-button"></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
