@@ -8,7 +8,6 @@ This is a solution to the [Results summary component challenge on Frontend Mento
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
   - [Continued development](#continued-development)
 - [Author](#author)
@@ -32,10 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
-## My process
+- Live Site URL: [Add live site URL here](https://results-summary-component-pearl-eight.vercel.app/)
 
 ### Built with
 
