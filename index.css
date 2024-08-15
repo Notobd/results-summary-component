@@ -5,20 +5,25 @@
   padding: 0px;
 }
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   font-family: "Hanken Grotesk", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  background-color: hsl(241, 10%, 95%);
-  padding: 0;
-  margin: 0;
+  background-color: white;
+  min-height: 100vh;
+  gap: 50px;
 }
 .main-div {
-  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  border-radius: 18px;
+  width: 500px;
+  box-shadow: 0px 25px 50px -5px hsl(224, 30%, 77%);
 }
 .result {
   display: flex;
@@ -29,8 +34,6 @@ body {
   border-radius: 18px;
   padding: 10px;
   width: 50%;
-  max-width: 250px;
-  margin-right: -15px;
   height: 300px;
 }
 #result-header {
@@ -69,13 +72,14 @@ body {
   font-weight: light;
   font-size: x-small;
   color: hsl(224, 30%, 80%);
+  width: 26ch;
+  text-align: center;
 }
 .summary {
   border-top-right-radius: 16px;
   border-bottom-right-radius: 16px;
   border-left: none;
   width: 50%;
-  max-width: 250px;
   padding: 10px;
   height: 300px;
   background-color: hsl(0, 0%, 100%);
@@ -192,21 +196,30 @@ input[type="button"]:hover {
 }
 @media (max-width: 767px) {
   body {
-    margin: 0;
-    padding: 0;
+    background-color: white;
+    gap: 20px;
+  }
+  main {
+    width: 100%;
   }
   .main-div {
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
   }
   .result {
     width: 100%;
-    height: 250px;
-    border-bottom-right-radius: 45px;
-    border-bottom-left-radius: 45px;
+    height: 270px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+  }
+  .remark-text {
+    width: 30ch;
   }
   .summary {
     justify-content: center;
@@ -214,11 +227,15 @@ input[type="button"]:hover {
     width: 100%;
     height: 420px;
     border-radius: 0;
-    padding: 20px;
-    margin-bottom: 10px;
+    padding: 0px 30px 30px 30px;
+  }
+  #summary-header {
+    font-size: 16px;
   }
   .summary ul {
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
   }
   .cognitive-abilities {
     margin: 20px 0;
@@ -255,7 +272,7 @@ input[type="button"]:hover {
   }
   input[type="button"] {
     padding: 12px;
-    width: 210px;
+    width: 100%;
     font-weight: 11px;
     font-size: 15px;
     border-radius: 22px;
